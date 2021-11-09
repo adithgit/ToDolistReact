@@ -39,7 +39,8 @@ function App() {
           </div>
           <div className="right">
 
-          //Deleting items from todo list 
+          {//Deleting items from todo list 
+          }
             
             <i onClick = {(event)=>{ settoDos( toDos.filter((obj2)=>{
               return obj2.id!==obj.id
