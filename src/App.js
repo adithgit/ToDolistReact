@@ -3,6 +3,11 @@ import './App.css';
 import {useState} from 'react'
 
 function App() {
+
+
+ var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+ var d = new Date();
+ var dayName = days[d.getDay()];
   let [toDos,settoDos] = useState([]);
   let [toDo ,setTodo] = useState(''); 
   return (
@@ -12,7 +17,7 @@ function App() {
       </div>
       <div className="subHeading">
         <br />
-        <h2>Whoop, it's Wednesday </h2>
+        <h2>Whoop, it's {dayName} </h2>
       </div>
       {
       //Adding items to the todo list
